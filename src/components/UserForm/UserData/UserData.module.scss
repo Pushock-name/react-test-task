@@ -1,0 +1,86 @@
+.UserData {
+    width: 718px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 32px;
+    margin-top: 90px;
+    margin-bottom: 32px;
+    margin-left: 100px;    
+} 
+
+.UserStatusBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 34px;
+    .UserNumber {
+        p {
+            font-family: 'Arial';
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 34px;
+            color: #666666;
+        }
+        b {
+            color: #000000;
+        }
+    }
+    .StatusChange {
+        color: #0C77BB;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: 3px;
+        cursor: pointer;
+    }
+}
+
+.StatusFieldBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    .StatusField {
+        width: 485px;
+        height: 53px;
+        background-color: #EAEAEA;
+        position: relative;
+        p {
+            padding-left: 12px;
+            font-family: 'Arial';
+            font-size: 13px;
+            line-height: 22px;
+            color: #404040;
+            word-wrap: break-word;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            border: 20px solid transparent; border-bottom: 20px solid #EAEAEA;
+            left: 5px;
+            top: -30px;
+        }
+    }
+}
+
+.CityListBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+    height: 31px;
+    .CityList select{
+        width: 336px;
+        height: 31px;
+        padding-left: 12px;
+        font-family: 'Arial';
+        font-size: 16px;
+        line-height: 19px;
+        border-color:#999999;  
+        border-width: 2px;
+    }
+}

@@ -1,0 +1,79 @@
+.EmailData {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   height: 202px;
+   width: 932px;
+   gap: 30px;
+   margin-left: 100px;    
+}
+
+.EmailBlock {
+   display: flex;
+   flex-direction: row;
+   align-items: first baseline;
+   justify-content: flex-start;
+   gap: 18px;
+   .EmailErrorBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 47.6px;
+      margin-left: 20px;
+      padding-left: 7.5px;
+   }
+}  
+
+.CheckEmailBlock {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 10px;
+   input {
+      zoom: 0.5;
+      margin-left: 224px;
+      width: 30px;
+   }
+   span {
+      font-family: 'Arial';
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      color: #000000;
+      
+   }
+}
+
+.DataSaveBtnBlock {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 12px;
+   margin-left: 230px;
+   .DataSaveBtn button{
+      font-family: 'Arial';
+      font-size: 18px;
+      line-height: 20px;
+      color: #FFFFFF;
+      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+      background-color: #71C838;
+      box-shadow: 0px 1px 0px #539D22;
+      width: 119px;
+      height: 40px;
+      border: 0px;
+      cursor: pointer;
+   }
+}
+
+.ErrorMessage {
+   color: red;
+   font-family: Arial;
+   font-size: 12px;
+   line-height: 20px;
+   font-weight: 400;
+}
+
+.ErrorInput input {
+   border-color: red;
+}
